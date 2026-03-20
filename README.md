@@ -14,7 +14,7 @@ Portfólio moderno, minimalista e altamente performático construído com **Reac
 <br />
 
 <div align="center">
-  <img src="./public/preview.png" alt="Preview do Portfólio JotaDev" width="100%" style="border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.15);" />
+  <img src="./public/screenshots/preview.png" alt="Preview do Portfólio JotaDev" width="100%" style="border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.15);" />
 </div>
 
 <br />

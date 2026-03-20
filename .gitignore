@@ -23,7 +23,10 @@ Thumbs.db
 *.log
 npm-debug.log*
 
+# Skills
+.agents/
+.agent/
+skills-lock.json
+
 # AI assistants
-.agent
-.agents
-.claude
+.claude/
