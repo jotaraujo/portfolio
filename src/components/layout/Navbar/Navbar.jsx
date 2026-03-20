@@ -41,7 +41,7 @@ export function Navbar() {
               <span className="text-2xl font-display font-bold">
                 <span className="text-accent">&lt;/</span>
                 Dev
-                <span className="text-accent">/></span>
+                <span className="text-accent">/&gt;</span>
               </span>
             </a>
 

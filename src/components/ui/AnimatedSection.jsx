@@ -11,6 +11,7 @@
  */
 import { useRef, useEffect } from 'react';
 import { gsap } from 'gsap';
+import { useGSAP } from '@gsap/react';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { cn } from '@/utils/cn';
 
@@ -28,7 +29,7 @@ export function AnimatedSection({
   const elementRef = useRef(null);
   const triggerRef = useRef(null);
 
-  useEffect(() => {
+  useGSAP(() => {
     const element = elementRef.current;
     if (!element) return;
 
@@ -55,10 +56,13 @@ export function AnimatedSection({
 
     gsap.set(element, initialStates[animation] || initialStates.fadeUp);
 
-    const tween = gsap.to(element, {
+    // Convert delay to seconds if provided in milliseconds
+    const delayInSeconds = delay > 10 ? delay / 1000 : delay;
+
+    gsap.to(element, {
       ...(finalStates[animation] || finalStates.fadeUp),
       duration,
-      delay,
+      delay: delayInSeconds,
       ease: 'power2.out',
       scrollTrigger: {
         trigger: element,
@@ -66,16 +70,7 @@ export function AnimatedSection({
         once: true,
       },
     });
-
-    triggerRef.current = tween.scrollTrigger;
-
-    return () => {
-      if (triggerRef.current) {
-        triggerRef.current.kill();
-      }
-      tween.kill();
-    };
-  }, [animation, delay, duration, start]);
+  }, { scope: elementRef, dependencies: [animation, delay, duration, start] });
 
   return (
     <Component
