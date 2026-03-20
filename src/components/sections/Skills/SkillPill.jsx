@@ -7,7 +7,7 @@
  */
 import { cn } from '@/utils/cn';
 
-export function SkillPill({ name, emoji, color }) {
+export function SkillPill({ name, icon: Icon, color }) {
   return (
     <div
       className={cn(
@@ -19,7 +19,9 @@ export function SkillPill({ name, emoji, color }) {
       )}
       style={{ '--tw-border-opacity': 0.3 }}
     >
-      <span className="text-lg">{emoji}</span>
+      <span className="flex items-center" style={{ color: color }}>
+        {Icon && <Icon size={20} />}
+      </span>
       <span className="font-mono text-sm text-text">{name}</span>
     </div>
   );
