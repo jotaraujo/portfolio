@@ -5,3 +5,8 @@ export { useCounter } from './useCounter';
 export { useMediaQuery } from './useMediaQuery';
 export { useDownload } from './useDownload';
 export { useContactForm } from './useContactForm';
+export {
+  useGSAPAnimations,
+  useHeroAnimations,
+  useParallax,
+} from './useGSAPAnimations';
