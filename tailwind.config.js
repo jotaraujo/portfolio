@@ -8,14 +8,14 @@ export default {
   theme: {
     extend: {
       colors: {
-        bg: 'var(--color-bg)',
-        surface: 'var(--color-surface)',
-        border: 'var(--color-border)',
-        accent: 'var(--color-accent)',
-        'accent-soft': 'var(--color-accent-soft)',
-        text: 'var(--color-text)',
-        muted: 'var(--color-muted)',
-        success: 'var(--color-success)',
+        bg: 'rgb(var(--color-bg) / <alpha-value>)',
+        surface: 'rgb(var(--color-surface) / <alpha-value>)',
+        border: 'rgb(var(--color-border) / <alpha-value>)',
+        accent: 'rgb(var(--color-accent) / <alpha-value>)',
+        'accent-soft': 'rgb(var(--color-accent-soft) / <alpha-value>)',
+        text: 'rgb(var(--color-text) / <alpha-value>)',
+        muted: 'rgb(var(--color-muted) / <alpha-value>)',
+        success: 'rgb(var(--color-success) / <alpha-value>)',
       },
       fontFamily: {
         sans: ['DM Sans', 'sans-serif'],
