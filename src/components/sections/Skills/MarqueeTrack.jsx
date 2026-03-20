@@ -20,7 +20,7 @@ export function MarqueeTrack({ items, direction = 'left' }) {
           <SkillPill
             key={`${skill.name}-${index}`}
             name={skill.name}
-            emoji={skill.emoji}
+            icon={skill.icon}
             color={skill.color}
           />
         ))}
