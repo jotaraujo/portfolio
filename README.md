@@ -1,4 +1,4 @@
-# 👨‍💻 JotaDev | Portfólio Pessoal
+# 👨‍💻 João Paulo Araújo | Portfólio Pessoal
 
 <div align="center">
 
