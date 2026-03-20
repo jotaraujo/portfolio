@@ -18,7 +18,7 @@ export function Projects() {
 
         <AnimatedSection delay={200}>
           <a
-            href="https://github.com"
+            href="https://github.com/jotaraujo?tab=repositories"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-2 text-accent hover:text-accent-soft transition-colors whitespace-nowrap"
