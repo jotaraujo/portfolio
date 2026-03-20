@@ -3,7 +3,9 @@
     "allow": [
       "Read(//d/projetos/**)",
       "Bash(gh repo:*)",
-      "Bash(git add:*)"
+      "Bash(git add:*)",
+      "Bash(git commit:*)",
+      "Bash(npm install:*)"
     ]
   }
 }
