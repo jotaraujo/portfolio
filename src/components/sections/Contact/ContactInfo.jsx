@@ -13,8 +13,8 @@ export function ContactInfo() {
         </svg>
       ),
       label: 'Email',
-      value: 'contato@exemplo.com',
-      href: 'mailto:contato@exemplo.com',
+      value: 'jpaulofonseca99@gmail.com',
+      href: 'mailto:jpaulofonseca99@gmail.com',
     },
     {
       icon: (
@@ -24,7 +24,7 @@ export function ContactInfo() {
         </svg>
       ),
       label: 'Localização',
-      value: 'São Paulo, Brasil',
+      value: 'Rio de Janeiro, Brasil',
     },
   ];
 
