@@ -1,123 +1,112 @@
-# Portfólio Pessoal
+# 👨‍💻 JotaDev | Portfólio Pessoal
 
 <div align="center">
 
-[![React](https://img.shields.io/badge/React-18.2.0-61DAFB?logo=react&logoColor=white)](https://reactjs.org/)
-[![TailwindCSS](https://img.shields.io/badge/TailwindCSS-3.4-06B6D4?logo=tailwindcss&logoColor=white)](https://tailwindcss.com/)
-[![Vite](https://img.shields.io/badge/Vite-5.0-646CFF?logo=vite&logoColor=white)](https://vitejs.dev/)
-[![License](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+![React](https://img.shields.io/badge/React-18.2.0-61DAFB?style=for-the-badge&logo=react&logoColor=black)
+![TailwindCSS](https://img.shields.io/badge/TailwindCSS-3.4-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white)
+![Vite](https://img.shields.io/badge/Vite-5.0-646CFF?style=for-the-badge&logo=vite&logoColor=white)
+![GSAP](https://img.shields.io/badge/GSAP-Animations-88CE02?style=for-the-badge&logo=greensock&logoColor=white)
 
-Portfólio pessoal de desenvolvedor web built with React + TailwindCSS.
+Portfólio moderno, minimalista e altamente performático construído com **React**, animado com **GSAP** e estilizado com **TailwindCSS**. Projetado para demonstrar skills, projetos e facilitar o contato profissional de forma elegante.
 
 </div>
 
-## Funcionalidades
+<br />
 
-- Smooth scroll entre seções
-- Animações de entrada ao scroll (IntersectionObserver)
-- Tema dark/light com persistência no localStorage
-- Navbar com glassmorphism e highlight do link ativo
-- Marquee infinito de skills em CSS puro
-- Botão de download de currículo com múltiplos estados
-- Formulário de contato com validação
-- 100% responsivo (mobile-first)
-- Componentes reutilizáveis com JSDoc
+<div align="center">
+  <img src="./public/screenshots/preview.png" alt="Preview do Portfólio JotaDev" width="100%" style="border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.15);" />
+</div>
 
-## Estrutura de Diretórios
+<br />
 
-```
-src/
-├── assets/
-│   ├── fonts/
-│   ├── images/
-│   └── docs/
-│       └── curriculo.pdf     # Coloque seu currículo aqui
-├── components/
-│   ├── layout/
-│   │   ├── Navbar/           # Navegação principal
-│   │   └── Footer/           # Rodapé
-│   ├── sections/
-│   │   ├── Hero/             # Seção inicial
-│   │   ├── About/            # Sobre mim
-│   │   ├── Skills/           # Skills com marquee
-│   │   ├── Projects/         # Projetos
-│   │   └── Contact/          # Formulário de contato
-│   └── ui/                   # Componentes base
-├── contexts/                 # ThemeContext, ScrollContext
-├── hooks/                    # 7 hooks customizados
-├── constants/                # Dados estáticos
-├── styles/                   # CSS global, variáveis, animações
-├── utils/                    # Helpers (cn, scrollTo, etc)
-├── App.jsx
-└── main.jsx
-```
+## ✨ Funcionalidades Destacadas
 
-## Como Rodar Localmente
+Este projeto vai muito além de um simples site estático. Ele incorpora arquitetura moderna e experiência imersiva:
 
+*   🌗 **Tema Dinâmico (Dark/Light Mode):** Alteração de tema com transições suaves de cor e salvamento de estado no `localStorage` do usuário.
+*   🎭 **Animações de Alta Performance:** Entrada de elementos e scroll animations controladas com `ScrollTrigger` e o poderoso hook `useGSAP`.
+*   🚀 **Performance Otimizada:** Componentização extrema, Lazy Loading de assets e bundle otimizado através do Vite.
+*   📱 **Design Mobile-First:** Grid responsivo em TailwindCSS garantindo que o portfólio funcione desde Smartwatches até monitores Ultrawide.
+*   🎨 **Glassmorphism e Micro-interações:** UI rica em detalhes com desfoque de fundo na navegação (blur) e feedback instantâneo ao hover.
+*   📝 **Formulário de Contato Inteligente:** Validação local eficiente sem dependências pesadas, avisando o usuário sobre erros apenas após a interação (onBlur).
+*   📄 **Download Contínuo de CV:** Botão dinâmico na Hero section integrado aos recursos de assets do Vite para entregar o arquivo PDF perfeitamente.
+
+---
+
+## 🛠️ Tecnologias e Ferramentas
+
+O ecossistema do portfólio foi cuidadosamente selecionado para manter máxima performance ao mesmo tempo que mantém uma DX (Developer Experience) incrível:
+
+*   **[React 18](https://reactjs.org/)** - Renderização de UI, componentização e gerenciamento de estado
+*   **[TailwindCSS (v3 / v4 ready)](https://tailwindcss.com/)** - Estilização baseada em classes de utilitário ágeis com suporte nativo a CSS Custom Properties (`rgb()`)
+*   **[Vite](https://vitejs.dev/)** - Bundler HMR super-rápido de nova geração
+*   **[GSAP & @gsap/react](https://gsap.com/)** - O padrão ouro para animações complexas baseadas na linha do tempo e posição de scroll
+*   **Lucide React** - Ícones leves e versáteis SVG em formato React Components
+
+---
+
+## 🚀 Como Executar Localmente
+
+### 1. Clonar o repositório
 ```bash
-# Clone o repositório
-git clone https://github.com/seu-usuario/portfolio.git
+git clone https://github.com/jotaraujo/portfolio.git
 cd portfolio
+```
 
-# Instale as dependências
+### 2. Instalar as Dependências
+Usando `npm` (ou `pnpm` / `yarn` caso prefira):
+```bash
 npm install
+```
 
-# Rode o servidor de desenvolvimento
+### 3. Rodar o Ambiente de Desenvolvimento
+```bash
 npm run dev
+```
+> O comando iniciará o Vite e você poderá acessar com `http://localhost:5173`. O `Hot Module Replacement (HMR)` atualizará as páginas nas alterações instantaneamente.
 
-# Abra http://localhost:5173 no navegador
+---
+
+## 📂 Visão Geral da Arquitetura
+
+O projeto adota uma estrutura modular moderna e limpa:
+
+```text
+src/
+├── assets/         # Recursos estáticos (imagens e o PDF de currículo)
+├── components/     # Todos os blocos visuais Reutilizáveis
+│   ├── layout/     # Estrutura base (Navbar, Footer)
+│   ├── sections/   # Blocos maiores do App (Hero, About, Projects, Contact)
+│   └── ui/         # Botões, Inputs e Labels atómicos 
+├── contexts/       # React Context APIs (ex: ThemeContext)
+├── hooks/          # Abstração de lógicas (ex: useContactForm, useDownload)
+├── styles/         # Estilos globais essenciais (Variáveis e Animações GSAP base)
+├── utils/          # Funções ajudantes independentes (ex: renderizador de classes cn())
+└── constants/      # Abstração de texto que facilita tradução e alteração do conteúdo
 ```
 
-## Como Personalizar
+---
 
-### 1. Adicionar seu currículo
+## 📦 Scripts Disponíveis
 
-Coloque seu arquivo PDF em `src/assets/docs/curriculo.pdf`.
+*   `npm run dev` - Roda em localhost no ambiente Dev com HMR.
+*   `npm run build` - Gera a compilação hiper otimizada para a pasta `/dist`.
+*   `npm run preview` - Inicia um servidor local servindo a pasta de produção `dist` para testes rápidos.
+*   `npm run lint` - Checa padrões de código com o linter nativo.
 
-### 2. Alterar dados pessoais
+---
 
-Edite os arquivos em `src/constants/`:
+## 🤝 Autor e Contribuições
 
-- `navigation.js` - Links de navegação
-- `skills.js` - Suas skills
-- `projects.js` - Seus projetos
-- `stats.js` - Estatísticas e cards
-- `social.js` - Links sociais
+Desenvolvido e mantido por [João Paulo Araújo (JotaDev)](https://github.com/jotaraujo).
 
-### 3. Alterar foto
+Criado com dedicação para quem busca uma base sólida ou inspiração open-source. Sugestões e contribuições (Issues e PRs) são muito bem-vindas! <3
 
-Substitua o conteúdo de `HeroAvatar.jsx` pelo seu componente de imagem:
+---
 
-```jsx
-<img
-  src="/assets/images/sua-foto.jpg"
-  alt="Sua foto"
-  className="w-full h-full object-cover"
-/>
-```
-
-## Deploy
-
-### Vercel
-
-1. Importe seu repositório no [Vercel](https://vercel.com)
-2. Framework preset: Vite
-3. Deploy!
-
-### Netlify
-
-1. Conecte seu repositório no [Netlify](https://netlify.com)
-2. Build command: `npm run build`
-3. Publish directory: `dist`
-4. Deploy!
-
-## Scripts
-
-- `npm run dev` - Servidor de desenvolvimento
-- `npm run build` - Build de produção
-- `npm run preview` - Preview do build
-- `npm run lint` - Lint do código
-
-## Licença
-
-MIT © [Seu Nome](https://github.com/seu-usuario)
+<div align="center">
+  <small>
+    <b>Distribuído sob licença MIT.</b><br>
+    © 2026 JotaDev - Todos os direitos reservados.
+  </small>
+</div>
