@@ -89,11 +89,12 @@ export function Hero() {
           </div>
 
           <div ref={titleRef}>
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-display font-bold text-text mb-6 leading-tight">
-              Desenvolvedor
-              <br />
-              <span className="text-accent">Web</span> Iniciante
+            <h1 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-display font-bold text-text mb-2 leading-tight">
+              João Paulo Araújo
             </h1>
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-display font-bold text-text mb-6">
+              Desenvolvedor <span className="text-accent">Web</span>
+            </h2>
           </div>
 
           <div ref={descRef}>

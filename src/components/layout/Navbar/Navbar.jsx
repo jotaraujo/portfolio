@@ -40,7 +40,7 @@ export function Navbar() {
             >
               <span className="text-2xl font-display font-bold">
                 <span className="text-accent">&lt;/</span>
-                Dev
+                JotaDev
                 <span className="text-accent">/&gt;</span>
               </span>
             </a>

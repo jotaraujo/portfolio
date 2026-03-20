@@ -17,8 +17,8 @@ export function Footer() {
           {/* Logo */}
           <div className="text-2xl font-display font-bold">
             <span className="text-accent">&lt;/</span>
-            Dev
-            <span className="text-accent">/></span>
+            JotaDev
+            <span className="text-accent">/&gt;</span>
           </div>
 
           {/* Navigation */}
