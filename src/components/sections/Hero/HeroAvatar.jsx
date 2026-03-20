@@ -1,6 +1,7 @@
 /**
  * Avatar with rotating gradient border and floating badges
  */
+import perfilImg from '@/assets/images/perfil.png';
 import { cn } from '@/utils/cn';
 
 export function HeroAvatar() {
@@ -21,17 +22,12 @@ export function HeroAvatar() {
         />
 
         {/* Avatar image container */}
-        <div className="absolute inset-1 rounded-full bg-bg overflow-hidden">
-          {/* Placeholder avatar */}
-          <div className="w-full h-full flex items-center justify-center bg-surface">
-            <svg
-              className="w-32 h-32 text-muted"
-              fill="currentColor"
-              viewBox="0 0 24 24"
-            >
-              <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z" />
-            </svg>
-          </div>
+        <div className="absolute inset-1 rounded-full bg-bg overflow-hidden flex items-center justify-center">
+          <img 
+            src={perfilImg} 
+            alt="Foto de Perfil" 
+            className="w-full h-full object-cover"
+          />
         </div>
 
         {/* Floating badges */}
