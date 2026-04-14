@@ -7,11 +7,11 @@
  */
 import { cn } from '@/utils/cn';
 
-export function SkillPill({ name, icon: Icon, color }) {
+export function SkillPill({ name, icon}) {
   return (
     <div
       className={cn(
-        'flex items-center gap-2 px-4 py-2 rounded-full',
+        'flex items-center justify-center gap-2 px-6 py-2 rounded-full',
         'bg-surface border border-border',
         'transition-all duration-300',
         'hover:border-accent hover:shadow-glow',
@@ -19,9 +19,7 @@ export function SkillPill({ name, icon: Icon, color }) {
       )}
       style={{ '--tw-border-opacity': 0.3 }}
     >
-      <span className="flex items-center" style={{ color: color }}>
-        {Icon && <Icon size={20} />}
-      </span>
+      <img src={icon} alt={name} width={20} height={20} className='object-contain'/>
       <span className="font-mono text-sm text-text">{name}</span>
     </div>
   );

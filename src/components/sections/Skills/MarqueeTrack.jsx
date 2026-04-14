@@ -11,7 +11,7 @@ export function MarqueeTrack({ items, direction = 'left' }) {
   const animationClass = direction === 'left' ? 'animate-marquee' : 'animate-marquee-rev';
 
   // Duplicate items for seamless loop
-  const duplicatedItems = [...items, ...items];
+  const duplicatedItems = [...items, ...items, ...items];
 
   return (
     <div className="flex overflow-hidden marquee-track">
