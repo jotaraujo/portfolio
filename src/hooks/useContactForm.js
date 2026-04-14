@@ -3,6 +3,7 @@
  * @returns {Object} Form state and handlers
  */
 import { useState, useCallback } from 'react';
+import emailjs from '@emailjs/browser';
 
 const initialValues = {
   name: '',
@@ -71,18 +72,35 @@ export function useContactForm() {
 
     setIsSubmitting(true);
 
-    // Simulate API call
-    await new Promise((resolve) => setTimeout(resolve, 1500));
+    try {
+      // Envia o e-mail via EmailJS
+      await emailjs.send(
+        import.meta.env.VITE_EMAILJS_SERVICE_ID,
+        import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
+        {
+          name: values.name,
+          email: values.email,
+          message: values.message,
+        },
+        import.meta.env.VITE_EMAILJS_PUBLIC_KEY
+      );
 
-    setIsSubmitting(false);
-    setIsSuccess(true);
-    setValues(initialValues);
-    setTouched({});
+      setIsSuccess(true);
+      setValues(initialValues);
+      setTouched({});
 
-    // Reset success message after 5 seconds
-    setTimeout(() => {
-      setIsSuccess(false);
-    }, 5000);
+      // Reseta a mensagem de sucesso após 5 segundos
+      setTimeout(() => {
+        setIsSuccess(false);
+      }, 5000);
+    } catch (error) {
+      // TODO: substituir por um estado de erro no formulário futuramente
+      alert('Erro ao enviar mensagem. Tente novamente mais tarde.');
+      console.error('EmailJS error:', error);
+    } finally {
+      // Garante que o loading para independente do resultado
+      setIsSubmitting(false);
+    }
   }, [values]);
 
   const resetForm = useCallback(() => {
