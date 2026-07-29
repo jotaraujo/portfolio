@@ -25,7 +25,7 @@ const Button = ({
 		<button
 			type={type}
 			className={cn(
-				'font-mono uppercase tracking-wider text-xs px-6 py-3 rounded-lg transition-colors focus:outline-none focus:ring-2 focus:ring-primary',
+				'font-mono uppercase tracking-wider text-sm px-6 py-3 rounded-sm transition-colors focus:outline-none focus:ring-2 focus:ring-primary',
 				variantStyles[variant],
 				className,
 			)}
