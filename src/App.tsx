@@ -1,7 +1,6 @@
 export default function App() {
   return (
-    <div className="min-h-screen bg-[var(--color-bg)] text-[var(--color-ink)] font-sans antialiased">
-      {/* O laboratório noturno será construído aqui componente por componente */}
+    <div className="min-h-screen bg-base text-ink font-sans p-12 flex flex-col items-center justify-center gap-12 overflow-hidden">
     </div>
-  );
+  )
 }

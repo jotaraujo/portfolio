@@ -1,25 +1,53 @@
 @import "tailwindcss";
 
-@layer base {
-  :root {
-    --color-bg: #0A0A0F;
-    --color-surface: #12121A;
-    --color-surface-raised: #1A1A25;
-    --color-border: #2A2A38;
-    --color-primary: #5B3F8C;
-    --color-primary-light: #7B5FB8;
-    --color-accent: #2DD4A8;
-    --color-ink: #E8E8ED;
-    --color-muted: #8888A0;
+@theme {
+	--color-base: #0a0a0f;
+	--color-surface: #12121a;
+	--color-surface-raised: #1a1a25;
+	--color-outline: #2a2a38;
+	--color-primary: #5b3f8c;
+	--color-primary-light: #7b5fb8;
+	--color-accent: #2dd4a8;
+	--color-ink: #e8e8ed;
+	--color-muted: #8888a0;
 
-    --font-display: 'Geist Mono', 'Fira Code', monospace;
-    --font-body: 'Geist Sans', 'Inter', system-ui, sans-serif;
-    --font-label: 'Geist Mono', 'Fira Code', monospace;
-  }
+	--font-mono: "Fira Code", "Geist Mono", monospace;
+	--font-sans: "Inter", "Geist Sans", system-ui, sans-serif;
+}
 
-  body {
-    background-color: var(--color-bg);
-    color: var(--color-ink);
-    font-family: var(--font-body);
-  }
+body {
+	background-color: var(--color-base);
+	color: var(--color-ink);
+	font-family: var(--font-sans);
+}
+
+@keyframes marquee {
+	0% {
+		transform: translateX(0%);
+	}
+	100% {
+		transform: translateX(-50%);
+	}
+}
+
+.animate-marquee {
+	display: flex;
+	width: max-content;
+	animation-name: marquee;
+	animation-duration: var(--duration, 35s);
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+}
+
+.animate-marquee:hover {
+	animation-play-state: paused;
+}
+
+@media (prefers-reduced-motion: reduce) {
+	.animate-marquee {
+		animation: none;
+		width: auto;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
 }
