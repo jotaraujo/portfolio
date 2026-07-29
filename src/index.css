@@ -1,0 +1,25 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --color-bg: #0A0A0F;
+    --color-surface: #12121A;
+    --color-surface-raised: #1A1A25;
+    --color-border: #2A2A38;
+    --color-primary: #5B3F8C;
+    --color-primary-light: #7B5FB8;
+    --color-accent: #2DD4A8;
+    --color-ink: #E8E8ED;
+    --color-muted: #8888A0;
+
+    --font-display: 'Geist Mono', 'Fira Code', monospace;
+    --font-body: 'Geist Sans', 'Inter', system-ui, sans-serif;
+    --font-label: 'Geist Mono', 'Fira Code', monospace;
+  }
+
+  body {
+    background-color: var(--color-bg);
+    color: var(--color-ink);
+    font-family: var(--font-body);
+  }
+}
