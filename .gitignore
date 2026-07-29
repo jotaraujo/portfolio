@@ -27,6 +27,7 @@ dist-ssr
 # Skills
 .agents/
 .claude/
+.husky/
 skills-lock.json
 
 # Docs
