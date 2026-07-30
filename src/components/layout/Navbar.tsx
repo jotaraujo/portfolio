@@ -4,6 +4,7 @@ import { NAV_LINKS } from '../../constants/navigation'
 import { cn } from '../../utils/cn'
 import Button from '../ui/Button'
 import SideMenuButton from '../ui/SideMenuButton'
+import { scrollTo } from '../../utils/scrollTo'
 
 export const Navbar = () => {
 	const [activeTab, setActiveTab] = useState(NAV_LINKS[0].href)
@@ -58,6 +59,11 @@ export const Navbar = () => {
 				{/* Logo */}
 				<a
 					href='#hero'
+					onClick={(e) => {
+						e.preventDefault()
+						setActiveTab('#hero')
+						scrollTo('#hero')
+					}}
 					className='font-mono text-sm font-bold tracking-tight text-ink hover:text-primary transition-colors'
 				>
 					jota<span className='text-primary'>.dev</span>
@@ -72,12 +78,14 @@ export const Navbar = () => {
 							<a
 								key={link.href}
 								href={link.href}
-								onClick={() => setActiveTab(link.href)}
+								onClick={(e) => {
+									e.preventDefault()
+									setActiveTab(link.href)
+									scrollTo(link.href)
+								}}
 								className={cn(
 									'relative px-4 py-1.5 text-xs font-mono uppercase tracking-wider transition-colors duration-200 z-10 select-none',
-									isActive
-										? 'text-primary'
-										: 'text-muted hover:text-ink',
+									isActive ? 'text-primary' : 'text-muted hover:text-ink',
 								)}
 							>
 								{isActive && (
