@@ -1,7 +1,7 @@
-import type { TerminalLine } from './Terminal'
+import Section from '../Section'
+import Reveal from '../../animations/Reveal'
 import Terminal from './Terminal'
-import Section from './Section'
-import Reveal from '../animations/Reveal'
+import type { TerminalLine } from './Terminal'
 
 const terminalLines: TerminalLine[] = [
   { text: 'whoami', type: 'prompt' },
