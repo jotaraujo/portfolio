@@ -1,0 +1,13 @@
+# Validação: primeira linha do commit (subject) ≤ 100 caracteres
+SUBJECT=$(head -n1 "$1")
+LENGTH=${#SUBJECT}
+
+if [ "$LENGTH" -gt 100 ]; then
+  echo ""
+  echo "❌ Erro: assunto do commit tem $LENGTH caracteres (máx: 100)."
+  echo "   Assunto: $SUBJECT"
+  echo ""
+  exit 1
+fi
+
+exit 0

@@ -3,7 +3,7 @@ import {
   React as ReactIcon,
   TypeScript as TypeScriptIcon,
   TailwindCSS as TailwindIcon,
-  FramerDark as FramerIcon,
+  FramerLight as FramerIcon,
   ReactQuery as QueryIcon,
   Git as GitIcon,
   Biome,

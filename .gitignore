@@ -24,9 +24,13 @@ dist-ssr
 *.sw?
 .oxlintrc.json
 
+#Enviromets
+.env
+
 # Skills
 .agents/
 .claude/
+.husky/
 skills-lock.json
 
 # Docs
