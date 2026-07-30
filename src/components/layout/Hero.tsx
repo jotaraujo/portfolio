@@ -1,8 +1,9 @@
-import { ArrowRight } from 'lucide-react'
+import { ArrowRight, Download } from 'lucide-react'
 import Button from '../ui/Button'
 import DotField from '../ui/DotField'
 import Tag from '../ui/Tag'
 import avatar from '../../assets/profile.png'
+import curriculo from '../../assets/curriculo.pdf'
 import { GitHubLight, LinkedIn } from 'developer-icons'
 
 const Hero = () => {
@@ -37,7 +38,10 @@ const Hero = () => {
 					</div>
 				</div>
 				<div className='flex flex-col items-center lg:items-start text-center lg:text-left gap-5 pb-20 lg:pb-0'>
-					<Tag variant='success' className='bg-surface-raised text-muted rounded-sm'>
+					<Tag
+						variant='success'
+						className='bg-surface-raised text-muted rounded-sm'
+					>
 						<span className='w-2 h-2 rounded-full bg-accent animate-pulse' />
 						Disponível para novos desafios
 					</Tag>
@@ -58,6 +62,12 @@ const Hero = () => {
 							<Button variant='primary' className='flex items-center gap-2'>
 								<span>Ver Projetos</span>
 								<ArrowRight size={14} />
+							</Button>
+						</a>
+						<a href={curriculo} download>
+							<Button variant='ghost' className='flex items-center gap-2'>
+								<Download size={14} />
+								<span>Currículo</span>
 							</Button>
 						</a>
 						<a href='#contato'>
