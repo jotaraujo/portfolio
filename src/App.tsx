@@ -4,6 +4,7 @@ import About from './components/layout/About'
 import Skills from './components/layout/Skills'
 import Projects from './components/layout/Projects'
 import Contact from './components/layout/Contact'
+import Footer from './components/layout/Footer'
 
 export default function App() {
   return (
@@ -16,6 +17,7 @@ export default function App() {
         <Projects />
         <Contact />
       </main>
+      <Footer />
     </div>
   )
 }
