@@ -1,6 +1,6 @@
 import { useRef } from 'react'
 import { useGSAP } from '@gsap/react'
-import { gsap } from '../../lib/gsap'
+import { gsap } from '../../../lib/gsap'
 
 export interface TerminalLine {
   text: string

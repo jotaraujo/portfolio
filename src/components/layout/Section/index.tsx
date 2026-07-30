@@ -1,5 +1,5 @@
-import { cn } from '../../utils/cn'
-import Reveal from '../animations/Reveal'
+import { cn } from '../../../utils/cn'
+import Reveal from '../../animations/Reveal'
 
 interface SectionProps {
   /** ID da seção para navegação por âncora (#sobre, #skills, ...) */
@@ -34,15 +34,9 @@ export default function Section({
   disableReveal = false,
 }: SectionProps) {
   const content = (
-    <section
-      id={id}
-      className={cn('relative py-24', className)}
-    >
+    <section id={id} className={cn('relative py-24', className)}>
       <div
-        className={cn(
-          'mx-auto max-w-5xl px-6 sm:px-12 lg:px-16',
-          containerClass,
-        )}
+        className={cn('mx-auto max-w-5xl px-6 sm:px-12 lg:px-16', containerClass)}
       >
         {title && (
           <header className="mb-16">
@@ -59,5 +53,9 @@ export default function Section({
 
   if (disableReveal) return content
 
-  return <Reveal direction="up" distance={48}>{content}</Reveal>
+  return (
+    <Reveal direction="up" distance={48}>
+      {content}
+    </Reveal>
+  )
 }
