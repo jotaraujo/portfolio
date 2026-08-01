@@ -1,8 +1,10 @@
 import { AnimatePresence, motion } from 'framer-motion'
+import { Download } from 'lucide-react'
 import { NAV_LINKS } from '../../../constants/navigation'
 import { cn } from '../../../utils/cn'
 import Button from '../../ui/Button'
 import { scrollTo } from '../../../utils/scrollTo'
+import curriculo from '../../../assets/curriculo.pdf'
 
 interface MobileMenuProps {
   isOpen: boolean
@@ -42,7 +44,22 @@ export default function MobileMenu({ isOpen, activeTab, onClose }: MobileMenuPro
               </a>
             ))}
           </nav>
-          <Button variant="ghost" className="text-sm">
+          <a
+            href={curriculo}
+            download
+            className="flex items-center gap-2 font-mono text-sm uppercase tracking-wider text-muted hover:text-ink transition-colors"
+          >
+            <Download size={16} />
+            <span>Currículo</span>
+          </a>
+          <Button
+            variant="ghost"
+            className="text-sm"
+            onClick={() => {
+              scrollTo('#contato')
+              onClose()
+            }}
+          >
             Fale Comigo
           </Button>
         </motion.div>
