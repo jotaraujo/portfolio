@@ -31,9 +31,10 @@ dist-ssr
 # Skills
 .agents/
 .claude/
-.husky/
+.remember/
 skills-lock.json
 
 # Docs
 DESIGN.md
 PRODUCT.md
+/docs/
