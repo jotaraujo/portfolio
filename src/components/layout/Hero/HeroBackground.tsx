@@ -13,8 +13,8 @@ export default function HeroBackground() {
         cursorRadius={500}
         cursorForce={0.1}
         bulgeOnly
-        gradientFrom="#A855F7"
-        gradientTo="#B497CF"
+        gradientFrom="#7B5FB8"
+        gradientTo="#5B3F8C"
         glowColor="#120F17"
       />
     </div>

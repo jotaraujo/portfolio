@@ -40,8 +40,8 @@ const DotField = memo(
 		glowRadius = 160,
 		sparkle = false,
 		waveAmplitude = 0,
-		gradientFrom = 'rgba(168, 85, 247, 0.35)',
-		gradientTo = 'rgba(180, 151, 207, 0.25)',
+		gradientFrom = '#7B5FB8',
+		gradientTo = '#5B3F8C',
 		glowColor = '#120F17',
 		...rest
 	}: DotFieldProps) => {

@@ -48,7 +48,7 @@ export default function Navbar() {
 		<header className='fixed top-0 left-0 right-0 z-50 py-4 px-4 sm:px-6 flex justify-center'>
 			<div
 				className={cn(
-					'relative w-full max-w-5xl flex items-center justify-between rounded-full px-6 py-2.5 transition-all duration-300',
+					'relative w-full max-w-5xl flex items-center justify-between rounded-full px-6 py-2.5 transition-[background-color,border-color,box-shadow] duration-300',
 					scrolled
 						? 'bg-surface border border-outline/60 shadow-lg'
 						: 'bg-transparent border border-transparent',
