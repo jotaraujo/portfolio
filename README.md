@@ -13,7 +13,7 @@
 
 ## 🔗 Links Rápidos
 
-- 🚀 **Demo Online:** `https://seu-portfolio-aqui.vercel.app` *(adicione seu link aqui após o deploy)*
+- 🚀 **Demo Online:** `https://portfolio-gamma-eight-vbb17ken9x.vercel.app/`
 - 📄 **Currículo:** [Download PDF](./src/assets/curriculo.pdf)
 
 ---
