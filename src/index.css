@@ -10,12 +10,17 @@
 	--color-accent: #2dd4a8;
 	--color-ink: #e8e8ed;
 	--color-muted: #8888a0;
-	--color-error: #FF5F56;
-	--color-warning: #FFBD2E;
-	--color-success: #27C93F;
+	--color-error: #e5484d;
+	--color-warning: #f5a623;
+	--color-success: #2dd4a8;
 
-	--font-mono: "Fira Code", "Geist Mono", monospace;
-	--font-sans: "Inter", "Geist Sans", system-ui, sans-serif;
+	--font-mono: 'Geist Mono', 'Fira Code', monospace;
+	--font-sans: 'Geist Sans', 'Inter', system-ui, sans-serif;
+}
+
+html,
+body {
+	overflow-x: clip;
 }
 
 body {
