@@ -9,6 +9,10 @@
 > **Engenharia de Interfaces Modernas, Micro-interações & Performance**  
 > Portfolio profissional de **João Paulo Araújo**, focado em desenvolvimento Frontend estrito, arquitetura de componentes reutilizáveis e design systems.
 
+<p align="center">
+  <img src="./public/preview.png" alt="Preview do portfolio jota.dev" width="100%" />
+</p>
+
 ---
 
 ## 🔗 Links Rápidos
