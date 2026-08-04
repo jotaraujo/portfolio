@@ -11,6 +11,7 @@ import {
   PostgreSQL,
   Prisma,
 } from 'developer-icons'
+import GsapIcon from '../assets/gsap.svg?react'
 
 export interface Skill {
   name: string
@@ -23,6 +24,7 @@ export const FRONTEND_SKILLS: Skill[] = [
   { name: 'TailwindCSS', Logo: TailwindIcon },
   { name: 'Framer Motion', Logo: FramerIcon },
   { name: 'TanStack Query', Logo: QueryIcon },
+  { name: 'GSAP', Logo: GsapIcon },
 ]
 
 export const BACKEND_TOOLING_SKILLS: Skill[] = [
