@@ -5,7 +5,8 @@ export const PROJECTS: Project[] = [
     id: 'gitprofile',
     title: 'GitProfile',
     img: '/gitprofile.png',
-    description: 'Aplicação web completa para busca e análise detalhada de perfis do GitHub. Integração com API REST, controle de estado global e cache de requisições.',
+    description:
+      'Estruturei a arquitetura antes de qualquer acabamento com estado global com Zustand e cache com TanStack Query para o refinamento da UI acontecer sobre uma base sólida.',
     featured: true,
     tags: ['React', 'TypeScript', 'Zustand', 'TanStack Query', 'Zod','Vitest', 'Supabase'],
     demoUrl: 'https://git-profile-lemon.vercel.app/',

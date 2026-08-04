@@ -6,6 +6,9 @@ import ContactInfo from './ContactInfo'
 export default function Contact() {
   return (
     <Section id="contato" title="Contato">
+      <p className="font-sans text-muted max-w-[65ch] mb-8">
+        Se você constrói com rigor, vamos conversar!
+      </p>
       <div className="grid grid-cols-1 lg:grid-cols-[1fr_auto] gap-12 lg:gap-20">
         <Reveal direction="up">
           <ContactForm />

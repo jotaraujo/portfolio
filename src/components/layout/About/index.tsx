@@ -35,10 +35,10 @@ export default function About() {
         <div className="flex flex-col gap-6">
           <Reveal direction="up">
             <p className="font-sans text-muted leading-relaxed max-w-[65ch]">
-              Especializado em construir interfaces modernas com React e
-              TypeScript. Meu foco está em escrever código limpo, componentizar
-              com inteligência e criar experiências que unem design e
-              performance.
+              Antes de qualquer acabamento, resolvo a estrutura. Assim em todos
+              os meus projetos: a lógica vem primeiro, e a componentização é
+              refinada em seguida, peça por peça, até cada componente ter um
+              motivo pra existir.
             </p>
           </Reveal>
 

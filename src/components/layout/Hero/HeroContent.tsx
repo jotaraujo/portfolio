@@ -34,9 +34,8 @@ export default function HeroContent() {
 				</h1>
 
 				<p className='font-sans text-muted text-sm max-w-2xl leading-relaxed'>
-					Desenvolvedor Frontend especializado em construir aplicações web
-					modernas, com foco em arquitetura limpa em React/TypeScript, alta
-					performance e experiência de usuário impecável.
+					Entrego aplicações onde organizo os componentes da base ao refinamento,
+					com foco em React/TypeScript, performance e experiência do usuário.
 				</p>
 
 				{/* CTAs */}
