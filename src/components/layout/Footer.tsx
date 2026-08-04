@@ -32,8 +32,8 @@ export default function Footer() {
 						>
 							jota<span className='text-primary'>.dev</span>
 						</a>
-						<p className='font-sans text-xs text-muted max-w-[20ch] leading-relaxed'>
-							Engenharia de interfaces
+						<p className='font-sans text-xs text-muted max-w-[30ch] leading-relaxed'>
+							Frontend com motivo para existir.
 						</p>
 					</div>
 

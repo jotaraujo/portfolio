@@ -29,13 +29,17 @@ export default function HeroContent() {
 				</Tag>
 
 				<h1 className='font-mono text-3xl sm:text-5xl md:text-6xl font-bold tracking-tight text-ink leading-tight'>
-					Engenharia de Interfaces <br />
-					<span className='text-primary'>Modernas &amp; Performáticas</span>
+					Frontend com <br />
+					<span className='text-primary'>motivo pra existir.</span>
 				</h1>
 
 				<p className='font-sans text-muted text-sm max-w-2xl leading-relaxed'>
-					Entrego aplicações onde organizo os componentes da base ao refinamento,
-					com foco em React/TypeScript, performance e experiência do usuário.
+					Do PRD ao deploy, sem pular etapas. Cada projeto com estrutura,
+					documentação e produção.
+				</p>
+
+				<p className='font-mono text-xs text-muted tracking-wide'>
+					Júnior · 1 ano de experiência
 				</p>
 
 				{/* CTAs */}

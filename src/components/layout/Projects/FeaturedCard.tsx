@@ -9,11 +9,21 @@ export default function FeaturedCard({ project }: { project: Project }) {
 			<div className='grid grid-cols-1 md:grid-cols-2'>
 				<div className='p-6 sm:p-8'>
 					<div className='flex flex-col gap-4'>
-						<h3 className='font-mono font-medium text-lg text-ink'>
-							{project.title}
-						</h3>
+						<div>
+							<h3 className='font-mono font-medium text-lg text-ink'>
+								{project.title}
+							</h3>
+							<p className='font-mono text-xs text-primary mt-1'>
+								{project.subtitle}
+							</p>
+						</div>
+
 						<p className='font-sans text-muted text-sm leading-relaxed max-w-[65ch]'>
-							{project.description}
+							{project.overview}
+						</p>
+
+						<p className='font-sans text-muted text-sm leading-relaxed max-w-[65ch]'>
+							{project.result}
 						</p>
 
 						<ProjectTags tags={project.tags} />

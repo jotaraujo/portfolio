@@ -40,6 +40,11 @@ export default function About() {
               refinada em seguida, peça por peça, até cada componente ter um
               motivo pra existir.
             </p>
+            <p className="font-sans text-muted leading-relaxed max-w-[65ch] mt-4">
+              Um ano de frontend, e a disciplina de quem constrói pra ser
+              verificado: cada projeto sai do PRD, passa por código strict,
+              testes e documentação, e chega em produção.
+            </p>
           </Reveal>
 
           <Reveal direction="up" delay={0.15}>

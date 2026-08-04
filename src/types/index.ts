@@ -6,8 +6,10 @@ export interface NavLink {
 export interface Project {
 	id: string
 	title: string
+	subtitle: string
 	img?: string
-	description: string
+	overview: string
+	result: string
 	featured: boolean
 	tags: string[]
 	demoUrl: string | null
