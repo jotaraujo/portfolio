@@ -8,6 +8,7 @@ export interface Project {
 	title: string
 	subtitle: string
 	img?: string
+	category: 'personal' | 'freelance'
 	overview: string
 	result: string
 	featured: boolean
