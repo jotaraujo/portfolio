@@ -17,7 +17,7 @@
 
 ## 🔗 Links Rápidos
 
-- 🚀 **Demo Online:** `https://www.jotaraujo.dev.br/`
+- 🚀 **Demo Online:** https://www.jotaraujo.dev.br/
 - 📄 **Currículo:** [Download PDF](./src/assets/curriculo.pdf)
 
 ---
