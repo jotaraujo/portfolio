@@ -17,7 +17,7 @@
 
 ## 🔗 Links Rápidos
 
-- 🚀 **Demo Online:** `https://portfolio-gamma-eight-vbb17ken9x.vercel.app/`
+- 🚀 **Demo Online:** `https://www.jotaraujo.dev.br/`
 - 📄 **Currículo:** [Download PDF](./src/assets/curriculo.pdf)
 
 ---
