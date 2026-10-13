@@ -20,7 +20,7 @@ export const PROJECTS: Project[] = [
     id: '5dimensoesdosono',
     title: '5 Dimensões do Sono',
     subtitle: 'Landing Page Institucional',
-    img: '/public/projects/5dimensoes.jpg',
+    img: '/projects/5dimensoes.jpg',
     category: 'freelance',
     overview:
       'Desenvolvimento da landing page de vendas do curso "5 Dimensões do Sono". O projeto foca em ajudar mães a estruturarem a rotina noturna de seus filhos, promovendo um desenvolvimento mais saudável.',
